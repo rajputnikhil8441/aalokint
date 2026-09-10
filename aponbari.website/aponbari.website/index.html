@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>APON BARI Eco Park — Chandina, Cumilla, Bangladesh</title>
+
+    <!-- ===== EDIT ME: description shown in Google / Facebook link preview ===== -->
+    <meta name="description" content="APON BARI Eco Park is a family eco-park and picnic destination at Keronkhal, Chandina, Cumilla 3510, Bangladesh. Green open grounds, picnic spots, children's zone and event space.">
+    <meta name="author" content="APON BARI">
+    <link rel="canonical" href="https://aponbari.website/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="APON BARI Eco Park">
+    <meta property="og:title" content="APON BARI Eco Park — Chandina, Cumilla">
+    <meta property="og:description" content="Family eco-park and picnic destination at Keronkhal, Chandina, Cumilla 3510, Bangladesh.">
+    <meta property="og:url" content="https://aponbari.website/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+
+    <!--
+  ===================================================================
+  APON BARI ECO PARK — single page website
+  No database, no build step, no image uploads.
+  Everything is in this one file. Just upload index.html to hosting.
+
+  BEFORE GOING LIVE, CHECK THESE 3 THINGS:
+    1. Opening hours -> search for  OPENING-HOURS
+    2. Ticket / entry-fee text -> search for  ENTRY-FEE
+    3. Facebook page link -> search for  FB-LINK
+  (No phone number is shown anywhere on this site — contact is by email only.)
+  The legal name, address and BIN must stay EXACTLY as they are —
+  they match the NBR record and the Meta Business Manager entry.
+  ===================================================================
+-->
+
+    <style>
+        :root {
+            --green-900: #0f3325;
+            --green-800: #164a34;
+            --green-700: #1c6a48;
+            --green-600: #22855a;
+            --green-500: #2fa06d;
+            --lime: #a8d84f;
+            --sand: #f6f4ec;
+            --ink: #1a1f1c;
+            --muted: #5c6a62;
+            --line: #e2e6df;
+            --white: #ffffff;
+            --radius: 16px;
+            --shadow: 0 10px 30px rgba(15, 51, 37, .10);
+            --maxw: 1120px;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", system-ui, -apple-system, "Noto Sans Bengali", Roboto, Arial, sans-serif;
+            color: var(--ink);
+            background: var(--white);
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img {
+            max-width: 100%;
+            display: block
+        }
+
+        a {
+            color: var(--green-700);
+            text-decoration: none
+        }
+
+        a:hover {
+            text-decoration: underline
+        }
+
+        .wrap {
+            max-width: var(--maxw);
+            margin: 0 auto;
+            padding: 0 20px
+        }
+
+        .bn {
+            font-family: "Noto Sans Bengali", "Hind Siliguri", system-ui, sans-serif
+        }
+
+        /* ---------- header ---------- */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(255, 255, 255, .92);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 12px 20px;
+            max-width: var(--maxw);
+            margin: 0 auto
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            font-weight: 800;
+            letter-spacing: .3px;
+            color: var(--green-900)
+        }
+
+        .brand svg {
+            flex: none
+        }
+
+        .brand small {
+            display: block;
+            font-weight: 600;
+            font-size: 11px;
+            letter-spacing: 1.6px;
+            color: var(--green-600);
+            text-transform: uppercase
+        }
+
+        .brand b {
+            font-size: 17px;
+            line-height: 1.1
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 22px;
+            align-items: center
+        }
+
+        .nav-links a {
+            color: var(--ink);
+            font-size: 14.5px;
+            font-weight: 600
+        }
+
+        .nav-links a:hover {
+            color: var(--green-700);
+            text-decoration: none
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--green-700);
+            color: #fff;
+            padding: 11px 20px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 14.5px;
+            border: 1px solid var(--green-700);
+            transition: .18s;
+        }
+
+        .btn:hover {
+            background: var(--green-800);
+            text-decoration: none;
+            color: #fff
+        }
+
+        .btn.ghost {
+            background: transparent;
+            color: var(--green-800)
+        }
+
+        .btn.ghost:hover {
+            background: var(--green-800);
+            color: #fff
+        }
+
+        @media(max-width:860px) {
+            .nav-links {
+                display: none
+            }
+        }
+
+        /* ---------- hero ---------- */
+
+        .hero {
+            position: relative;
+            min-height: clamp(460px, 68vh, 620px);
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, var(--green-900), var(--green-700) 55%, var(--green-500));
+            overflow: hidden;
+        }
+
+        .hero-img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: .34;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(15, 51, 37, .55), rgba(15, 51, 37, .75));
+        }
+
+        .hero .wrap {
+            position: relative;
+            z-index: 2;
+            color: #fff;
+            padding-top: 64px;
+            padding-bottom: 64px
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(168, 216, 79, .18);
+            border: 1px solid rgba(168, 216, 79, .45);
+            color: var(--lime);
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 12.5px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            font-size: clamp(34px, 6vw, 58px);
+            line-height: 1.08;
+            margin: 18px 0 6px;
+            font-weight: 800;
+            letter-spacing: -.5px;
+        }
+
+        .hero .sub-bn {
+            font-size: clamp(17px, 2.4vw, 22px);
+            color: var(--lime);
+            font-weight: 600;
+            margin: 0 0 14px
+        }
+
+        .hero p.lead {
+            font-size: clamp(15.5px, 1.8vw, 18px);
+            max-width: 620px;
+            color: rgba(255, 255, 255, .9);
+            margin: 0 0 26px
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px
+        }
+
+        .hero-actions .btn {
+            background: var(--lime);
+            color: var(--green-900);
+            border-color: var(--lime)
+        }
+
+        .hero-actions .btn:hover {
+            background: #b9e461;
+            color: var(--green-900)
+        }
+
+        .hero-actions .btn.line {
+            background: transparent;
+            color: #fff;
+            border-color: rgba(255, 255, 255, .6)
+        }
+
+        .hero-actions .btn.line:hover {
+            background: #fff;
+            color: var(--green-900)
+        }
+
+        /* ---------- generic section ---------- */
+
+        section {
+            padding: 72px 0
+        }
+
+        .sec-head {
+            max-width: 640px;
+            margin-bottom: 38px
+        }
+
+        .sec-head .kicker {
+            color: var(--green-600);
+            font-weight: 800;
+            font-size: 12.5px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px
+        }
+
+        .sec-head h2 {
+            font-size: clamp(26px, 3.6vw, 38px);
+            line-height: 1.15;
+            margin: 0 0 12px;
+            color: var(--green-900);
+            letter-spacing: -.4px
+        }
+
+        .sec-head p {
+            color: var(--muted);
+            margin: 0;
+            font-size: 16.5px
+        }
+
+        .alt {
+            background: var(--sand)
+        }
+
+        /* ---------- about ---------- */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.15fr .85fr;
+            gap: 44px;
+            align-items: center
+        }
+
+        .about-grid p {
+            color: var(--muted);
+            font-size: 16.5px
+        }
+
+        .about-media {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            background: linear-gradient(160deg, var(--green-600), var(--green-800));
+            min-height: 300px;
+            position: relative;
+        }
+
+        .about-media img {
+            width: 100%;
+            height: 100%;
+            min-height: 300px;
+            object-fit: cover
+        }
+
+        .stat-row {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-top: 26px
+        }
+
+        .stat {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            padding: 14px 18px;
+            min-width: 132px
+        }
+
+        .stat b {
+            display: block;
+            font-size: 22px;
+            color: var(--green-700);
+            line-height: 1.2
+        }
+
+        .stat span {
+            font-size: 13px;
+            color: var(--muted);
+            font-weight: 600
+        }
+
+        @media(max-width:860px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 28px
+            }
+        }
+
+        /* ---------- facilities ---------- */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            padding: 26px 24px;
+            transition: .2s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow);
+            border-color: #cfe0d4
+        }
+
+        .card .ico {
+            width: 46px;
+            height: 46px;
+            border-radius: 12px;
+            display: grid;
+            place-items: center;
+            background: linear-gradient(140deg, var(--green-600), var(--green-800));
+            margin-bottom: 14px;
+        }
+
+        .card h3 {
+            margin: 0 0 7px;
+            font-size: 18px;
+            color: var(--green-900)
+        }
+
+        .card p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 15px
+        }
+
+        /* ---------- gallery ---------- */
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 14px
+        }
+
+        .shot {
+            position: relative;
+            border-radius: 14px;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            background: linear-gradient(150deg, var(--green-600), var(--green-900));
+        }
+
+        .shot img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: .4s
+        }
+
+        .shot:hover img {
+            transform: scale(1.06)
+        }
+
+        .shot figcaption {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 22px 16px 12px;
+            background: linear-gradient(transparent, rgba(15, 51, 37, .8));
+            color: #fff;
+            font-size: 13.5px;
+            font-weight: 600;
+        }
+
+        /* ---------- visit / info ---------- */
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px
+        }
+
+        .info {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-left: 4px solid var(--green-600);
+            border-radius: 12px;
+            padding: 22px 22px
+        }
+
+        .info h4 {
+            margin: 0 0 8px;
+            font-size: 15px;
+            letter-spacing: .4px;
+            text-transform: uppercase;
+            color: var(--green-700)
+        }
+
+        .info p {
+            margin: 0;
+            color: var(--ink);
+            font-size: 16px
+        }
+
+        .info p.small {
+            color: var(--muted);
+            font-size: 14.5px;
+            margin-top: 6px
+        }
+
+        /* ---------- contact ---------- */
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 36px
+        }
+
+        .addr-box {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            padding: 28px;
+            box-shadow: var(--shadow)
+        }
+
+        .addr-line {
+            display: flex;
+            gap: 14px;
+            padding: 14px 0;
+            border-bottom: 1px dashed var(--line)
+        }
+
+        .addr-line:last-child {
+            border-bottom: 0
+        }
+
+        .addr-line .k {
+            font-size: 12.5px;
+            font-weight: 800;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            color: var(--green-600);
+            min-width: 96px;
+            padding-top: 2px
+        }
+
+        .addr-line .v {
+            font-size: 16px
+        }
+
+        .addr-line .v span {
+            display: block;
+            color: var(--muted);
+            font-size: 14px
+        }
+
+        .map-box {
+            border-radius: var(--radius);
+            overflow: hidden;
+            border: 1px solid var(--line);
+            min-height: 340px;
+            background: var(--sand);
+            display: flex;
+            flex-direction: column
+        }
+
+        .map-box iframe {
+            border: 0;
+            width: 100%;
+            flex: 1;
+            min-height: 300px
+        }
+
+        @media(max-width:860px) {
+            .contact-grid {
+                grid-template-columns: 1fr
+            }
+        }
+
+        /* ---------- legal / footer ---------- */
+
+        footer {
+            background: var(--green-900);
+            color: #c9d8ce;
+            padding: 56px 0 26px;
+            font-size: 15px
+        }
+
+        footer a {
+            color: var(--lime)
+        }
+
+        .f-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr;
+            gap: 34px
+        }
+
+        footer h5 {
+            color: #fff;
+            font-size: 14px;
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+            margin: 0 0 14px
+        }
+
+        footer ul {
+            list-style: none;
+            margin: 0;
+            padding: 0
+        }
+
+        footer li {
+            margin-bottom: 8px
+        }
+
+        .legal-box {
+            margin-top: 34px;
+            padding: 20px 22px;
+            border: 1px solid rgba(255, 255, 255, .14);
+            border-radius: 12px;
+            background: rgba(255, 255, 255, .04);
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .legal-box b {
+            color: #fff
+        }
+
+        .copyright {
+            margin-top: 26px;
+            padding-top: 18px;
+            border-top: 1px solid rgba(255, 255, 255, .12);
+            font-size: 13.5px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px
+        }
+
+        @media(max-width:860px) {
+            .f-grid {
+                grid-template-columns: 1fr;
+                gap: 26px
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ============ HEADER ============ -->
+    <header>
+        <nav class="nav">
+            <a class="brand" href="#top">
+      <svg width="34" height="34" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="23" fill="#1c6a48"/>
+        <path d="M34 13c0 11-6.5 18-16 18-1.6 0-3-.2-4.3-.6C15.4 21 22.6 14.6 34 13Z" fill="#a8d84f"/>
+        <path d="M12 36c3-8 8-13 17-16" stroke="#fff" stroke-width="2" stroke-linecap="round" fill="none"/>
+      </svg>
+      <span>
+        <b>APON BARI</b>
+        <small>Eco Park</small>
+      </span>
+    </a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#facilities">Facilities</a>
+                <a href="#visit">Visit</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a class="btn" href="#contact">Plan a Visit</a>
+        </nav>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <div class="hero" id="top">
+        <!-- Decorative background photo, loaded from a free stock CDN.
+       If it ever fails to load it simply hides and the green gradient shows. -->
+        <img class="hero-img" alt="" src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1800&q=70" onerror="this.style.display='none'">
+        <div class="wrap">
+            <span class="eyebrow">Chandina &middot; Cumilla &middot; Bangladesh</span>
+            <h1>APON BARI Eco Park</h1>
+            <p class="sub-bn bn">আপন বাড়ি ইকো পার্ক — সবুজের মাঝে একটি দিন</p>
+            <p class="lead">
+                A green, family-friendly eco park in Keronkhal, Chandina. Open lawns, shaded walkways, picnic corners and space for school tours, family days and small events.
+            </p>
+            <div class="hero-actions">
+                <a class="btn" href="#visit">Visiting Information</a>
+                <a class="btn line" href="#contact">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about">
+        <div class="wrap">
+            <div class="about-grid">
+                <div>
+                    <div class="sec-head" style="margin-bottom:20px">
+                        <div class="kicker">About us</div>
+                        <h2>A quiet green space for families in Cumilla</h2>
+                    </div>
+                    <p>
+                        APON BARI Eco Park is a locally owned eco park and picnic destination in Keronkhal, Chandina, Cumilla. The park was set up to give families, schools and groups from Cumilla and the surrounding districts an open, green place to spend a relaxed day away
+                        from the town.
+                    </p>
+                    <p>
+                        The grounds are kept simple and natural — grass, trees, shaded seating and room for children to run. Groups can book space for picnics, school excursions, family get-togethers and small outdoor programmes.
+                    </p>
+                    <p class="bn" style="color:var(--muted)">
+                        আপন বাড়ি ইকো পার্ক কুমিল্লার চান্দিনার কেরনখাল এলাকায় অবস্থিত একটি পারিবারিক ইকো পার্ক ও পিকনিক স্পট। পরিবার, স্কুল ও বিভিন্ন গ্রুপের জন্য খোলা সবুজ পরিবেশে দিন কাটানোর ব্যবস্থা রয়েছে।
+                    </p>
+                    <div class="stat-row">
+                        <div class="stat"><b>Chandina</b><span>Cumilla, 3510</span></div>
+                        <div class="stat"><b>Family</b><span>Friendly grounds</span></div>
+                        <div class="stat"><b>Groups</b><span>Picnic &amp; school tours</span></div>
+                    </div>
+                </div>
+                <div class="about-media">
+                    <img alt="Green park landscape" src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=1200&q=70" onerror="this.style.display='none'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FACILITIES ============ -->
+    <section class="alt" id="facilities">
+        <div class="wrap">
+            <div class="sec-head">
+                <div class="kicker">What's here</div>
+                <h2>Facilities at the park</h2>
+                <p>Simple, well-kept facilities for a comfortable day out with family or a group.</p>
+            </div>
+            <div class="cards">
+
+                <div class="card">
+                    <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#a8d84f" stroke-width="2" stroke-linecap="round"><path d="M12 22V12"/><path d="M12 12c0-5 3-8 7-9-1 5-3 8-7 9Z"/><path d="M12 15c0-4-2.5-6.5-6-7.5.8 4 2.6 6.5 6 7.5Z"/></svg></div>
+                    <h3>Open green grounds</h3>
+                    <p>Wide lawns and tree-lined walking paths across the park.</p>
+                </div>
+
+                <div class="card">
+                    <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#a8d84f" stroke-width="2" stroke-linecap="round"><path d="M3 11h18"/><path d="M5 11V7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4"/><path d="M5 11v7"/><path d="M19 11v7"/></svg></div>
+                    <h3>Picnic corners</h3>
+                    <p>Shaded seating and dedicated spots for family and group picnics.</p>
+                </div>
+
+                <div class="card">
+                    <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#a8d84f" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="6" r="3"/><path d="M6 21v-3a6 6 0 0 1 12 0v3"/></svg></div>
+                    <h3>Children's zone</h3>
+                    <p>A safe, open area where children can play within sight of the seating.</p>
+                </div>
+
+                <div class="card">
+                    <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#a8d84f" stroke-width="2" stroke-linecap="round"><path d="M4 20V9l8-5 8 5v11"/><path d="M9 20v-6h6v6"/></svg></div>
+                    <h3>Event &amp; program space</h3>
+                    <p>Open space that can be booked for small outdoor programmes and gatherings.</p>
+                </div>
+
+                <div class="card">
+                    <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#a8d84f" stroke-width="2" stroke-linecap="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 10h6"/></svg></div>
+                    <h3>Parking</h3>
+                    <p>On-site parking space for cars, microbuses and group transport.</p>
+                </div>
+
+                <div class="card">
+                    <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#a8d84f" stroke-width="2" stroke-linecap="round"><path d="M12 21s-7-4.6-7-10a7 7 0 1 1 14 0c0 5.4-7 10-7 10Z"/><circle cx="12" cy="11" r="2.5"/></svg></div>
+                    <h3>Easy to reach</h3>
+                    <p>Located at Keronkhal, Chandina — a short drive from Cumilla town.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ VISIT ============ -->
+    <section id="visit">
+        <div class="wrap">
+            <div class="sec-head">
+                <div class="kicker">Plan your visit</div>
+                <h2>Visiting information</h2>
+                <p>Please contact us in advance for group bookings, school tours and event reservations.</p>
+            </div>
+            <div class="info-grid">
+
+                <!-- OPENING-HOURS : change these two lines to your real timing -->
+                <div class="info">
+                    <h4>Opening hours</h4>
+                    <p>Open daily &middot; 9:00 AM – 7:00 PM</p>
+                    <p class="small">Timing may change on public holidays.</p>
+                </div>
+
+                <!-- ENTRY-FEE : change this to your real entry fee -->
+                <div class="info">
+                    <h4>Entry</h4>
+                    <p>Entry ticket available at the main gate</p>
+                    <p class="small">Group and school rates on request — please email us.</p>
+                </div>
+
+                <div class="info">
+                    <h4>Group booking</h4>
+                    <p>Picnics, school tours &amp; family events</p>
+                    <p class="small">Advance booking recommended, especially in winter season.</p>
+                </div>
+
+                <div class="info">
+                    <h4>Good to know</h4>
+                    <p>Please help us keep the park clean</p>
+                    <p class="small">Use the bins provided and avoid damaging plants and trees.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <!--
+  GALLERY NOTE: the pictures below are free stock nature photos used as
+  placeholders so the page never looks empty. When you have real photos of
+  the park, replace each src="https://images.unsplash.com/..." with your own
+  image link (or an uploaded file like src="photos/park-1.jpg").
+-->
+    <section class="alt" id="gallery">
+        <div class="wrap">
+            <div class="sec-head">
+                <div class="kicker">Gallery</div>
+                <h2>Green all around</h2>
+                <p>A look at the kind of open, natural surroundings the park is built around.</p>
+            </div>
+            <div class="gallery">
+                <figure class="shot">
+                    <img alt="Trees and greenery" src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=900&q=70" onerror="this.style.display='none'">
+                    <figcaption>Shaded walkways</figcaption>
+                </figure>
+                <figure class="shot">
+                    <img alt="Open field" src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=70" onerror="this.style.display='none'">
+                    <figcaption>Open lawns</figcaption>
+                </figure>
+                <figure class="shot">
+                    <img alt="Sunlight through leaves" src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=900&q=70" onerror="this.style.display='none'">
+                    <figcaption>Natural surroundings</figcaption>
+                </figure>
+                <figure class="shot">
+                    <img alt="Garden path" src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=900&q=70" onerror="this.style.display='none'">
+                    <figcaption>Quiet corners</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact">
+        <div class="wrap">
+            <div class="sec-head">
+                <div class="kicker">Contact</div>
+                <h2>Find us &amp; get in touch</h2>
+                <p>APON BARI Eco Park, Keronkhal, Chandina, Cumilla 3510, Bangladesh.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="addr-box">
+
+                    <div class="addr-line">
+                        <div class="k">Business</div>
+                        <div class="v">
+                            APON BARI
+                            <span>Eco Park &middot; Sole proprietorship</span>
+                        </div>
+                    </div>
+
+                    <div class="addr-line">
+                        <div class="k">Address</div>
+                        <div class="v">
+                            Keronkhal, Cumilla<br> Chandina, Cumilla 3510<br> Bangladesh
+                        </div>
+                    </div>
+
+                    <div class="addr-line">
+                        <div class="k">Email</div>
+                        <div class="v">
+                            <a href="mailto:info@aponbari.website">info@aponbari.website</a>
+                            <span>For bookings and general enquiries</span>
+                        </div>
+                    </div>
+
+                    <div class="addr-line">
+                        <div class="k">Website</div>
+                        <div class="v"><a href="https://aponbari.website/">aponbari.website</a></div>
+                    </div>
+
+                    <div class="addr-line">
+                        <div class="k">VAT / BIN</div>
+                        <div class="v">
+                            004963586-0601
+                            <span>Registered for VAT — National Board of Revenue, Bangladesh</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="map-box">
+                    <iframe title="Map — Chandina, Cumilla" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Chandina,%20Cumilla%203510,%20Bangladesh&output=embed"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+        <div class="wrap">
+            <div class="f-grid">
+
+                <div>
+                    <h5>APON BARI Eco Park</h5>
+                    <p style="margin:0 0 10px">
+                        Keronkhal, Cumilla<br> Chandina, Cumilla 3510<br> Bangladesh
+                    </p>
+                    <p style="margin:0">
+                        <a href="mailto:info@aponbari.website">info@aponbari.website</a>
+                    </p>
+                </div>
+
+                <div>
+                    <h5>Explore</h5>
+                    <ul>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#facilities">Facilities</a></li>
+                        <li><a href="#visit">Visiting information</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5>Follow</h5>
+                    <ul>
+                        <!-- FB-LINK : put your real Facebook page link here -->
+                        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook page</a></li>
+                        <li><a href="mailto:info@aponbari.website">Email us</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="legal-box">
+                <b>Business information</b><br> Legal business name: <b>APON BARI</b> &nbsp;|&nbsp; Type of ownership: Proprietorship<br> Registered address: Keronkhal, Cumilla, Chandina, Cumilla 3510, Bangladesh<br> Business Identification Number (BIN):
+                <b>004963586-0601</b> — Registered for VAT, Customs, Excise and VAT Commissionerate, Comilla, National Board of Revenue, Bangladesh.
+            </div>
+
+            <div class="copyright">
+                <span>&copy; <span id="yr">2026</span> APON BARI Eco Park. All rights reserved.</span>
+                <span>Chandina, Cumilla, Bangladesh</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('yr').textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Structured data: helps Google and automated checks read the business details -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "TouristAttraction",
+            "name": "APON BARI Eco Park",
+            "legalName": "APON BARI",
+            "url": "https://aponbari.website/",
+            "email": "info@aponbari.website",
+            "description": "Family eco park and picnic destination at Keronkhal, Chandina, Cumilla 3510, Bangladesh.",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Keronkhal, Cumilla",
+                "addressLocality": "Chandina",
+                "addressRegion": "Cumilla",
+                "postalCode": "3510",
+                "addressCountry": "BD"
+            },
+            "taxID": "004963586-0601",
+            "openingHours": "Mo-Su 09:00-19:00"
+        }
+    </script>
+
+</body>
+
+</html>
